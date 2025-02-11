@@ -21,9 +21,11 @@ Chameleon-BOD/
 │   ├── MMLU_Eval.py
 │   └── mmlu_rephrase_DS.py
 ├── Data/
-│   ├── rephrased_mmlu_test_parallel_temp1_0.json
+│   └── rephrased_mmlu_test_parallel_temp1_0.json
+├── Results/
+│   └── all the results json
 └── paper/
-    ├──paper.pdf
+    └── paper.pdf
 ```
 
 - **`code/`**: Contains our experimental Python scripts:
