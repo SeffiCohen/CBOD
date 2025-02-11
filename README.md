@@ -14,26 +14,26 @@ Large language models (LLMs) often appear to excel on public benchmarks, but the
 
 ```
 Chameleon-BOD/
-├── .gitignore
 ├── README.md          <-- (This file)
-├── requirements.txt
 ├── code/
 │   ├── MMLU_Eval.py
 │   └── mmlu_rephrase_DS.py
 ├── Data/
 │   └── rephrased_mmlu_test_parallel_temp1_0.json
 ├── Results/
-│   └── all the results as json files
+│   └── results_{model_name}.json
 └── paper/
     └── paper.pdf
 ```
 
 - **`code/`**: Contains our experimental Python scripts:
-  - **`MMLU_Eval.py`** – Evaluates LLM predictions on both original and rephrased prompts.
+  - **`MMLU_Eval.py`** – Evaluate LLM predictions on original and rephrased prompts.
   - **`mmlu_rephrase_DS.py`** – Uses the DeepSeek API to generate a perturbed (rephrased) dataset.
-- **`paper/`**: Contains the LaTeX source files for the paper and all required figures.
-- **`requirements.txt`**: Lists all Python dependencies.
-- **`.gitignore`** & **`LICENSE`**: Standard files for repository management and licensing.
+- **`paper/`**: Contains the paper.
+- **`Data/`**: Contains the rephrased dataset:
+  - **`rephrased_mmlu_test_parallel_temp1_0.json`** – the rephrased dataset (μ=1.0).
+- **`Results/`**: Contains the results of the evaluated LLMs:
+  - **`results_{model_name}.json`** – The results of LLM {model_name}.
 
 ---
 
@@ -46,8 +46,6 @@ To run the code, you need the following packages:
 - **tqdm** (>= 4.60.0)
 - **requests** (>= 2.25.0)
 - **datasets** (>= 2.0.0)
-
-These dependencies are all listed in the [requirements.txt](requirements.txt) file.
 
 ---
 
