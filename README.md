@@ -23,7 +23,7 @@ Chameleon-BOD/
 ├── Data/
 │   └── rephrased_mmlu_test_parallel_temp1_0.json
 ├── Results/
-│   └── all the results json
+│   └── all the results as json files
 └── paper/
     └── paper.pdf
 ```
