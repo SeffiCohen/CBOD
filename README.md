@@ -15,20 +15,15 @@ Large language models (LLMs) often appear to excel on public benchmarks, but the
 ```
 Chameleon-BOD/
 ├── .gitignore
-├── LICENSE
 ├── README.md          <-- (This file)
 ├── requirements.txt
 ├── code/
 │   ├── MMLU_Eval.py
 │   └── mmlu_rephrase_DS.py
+├── Data/
+│   ├── rephrased_mmlu_test_parallel_temp1_0.json
 └── paper/
-    ├── main.tex
-    ├── custom.bib
-    └── figures/
-        ├── motivation.png
-        ├── logparams.png
-        ├── diffvsparams.png
-        └── difvsacc.png
+    ├──paper.pdf
 ```
 
 - **`code/`**: Contains our experimental Python scripts:
