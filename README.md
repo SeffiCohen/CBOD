@@ -19,6 +19,7 @@ Chameleon-BOD/
 │   ├── MMLU_Eval.py
 │   └── mmlu_rephrase_DS.py
 ├── Data/
+|   ├── rephrased_gpqa_diamond.json
 │   └── rephrased_mmlu_test_parallel_temp1_0.json
 ├── Results/
 │   └── results_{model_name}.json
@@ -32,6 +33,7 @@ Chameleon-BOD/
 - **`paper/`**: Contains the paper.
 - **`Data/`**: Contains the rephrased dataset:
   - **`rephrased_mmlu_test_parallel_temp1_0.json`** – the rephrased dataset (μ=1.0).
+  - **`rephrased_gpqa_diamond.json`** – the rephrased GPQA diamond dataset (μ=0.5).
 - **`Results/`**: Contains the results of the evaluated LLMs:
   - **`results_{model_name}.json`** – The results of LLM {model_name}.
 
